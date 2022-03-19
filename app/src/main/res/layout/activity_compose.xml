@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    tools:context=".ComposeActivity">
+
+    <EditText
+        android:id="@+id/etTweetCompose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="What's happening?"
+        android:inputType="textMultiLine"
+        android:minLines="5"
+        android:paddingBottom="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnTweet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Tweet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTweetCompose" />
+
+    <TextView
+        android:id="@+id/tvCountLength"
+        android:layout_width="64dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="308dp"
+        android:layout_marginBottom="20dp"
+        android:text="280/280"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/etTweetCompose"
+        app:layout_constraintStart_toStartOf="@+id/etTweetCompose" />
+</androidx.constraintlayout.widget.ConstraintLayout>
